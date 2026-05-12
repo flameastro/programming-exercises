@@ -1,0 +1,15 @@
+# This time no story, no theory. The examples below show you how to write function accum:
+# Examples:
+# accum("abcd") -> "A-Bb-Ccc-Dddd"
+# accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+# accum("cwAt") -> "C-Ww-Aaa-Tttt"
+# The parameter of accum is a string which includes only letters from a..z and A..Z.
+def accum(st):
+    return "-".join([l.upper() + l.lower() * i for i, l in enumerate(st)])
+
+
+
+if __name__ == "__main__":
+    print(accum("abcd"))  # A-Bb-Ccc-Dddd
+    print(accum("RqaEzty"))  # R-Qq-Aaa-EEEE-Zzzzz-Tttttt-Yyyyyyy
+    print(accum("cwAt"))  # C-Ww-AAA-Tttt
