@@ -1,18 +1,13 @@
-# Description
-# We need a function that can transform a string into a number. What ways of achieving this do you know?
-
-# Note: Don't worry, all inputs will be strings, and every string is a perfectly valid representation of an integral number.
-
-# Examples
-# "1234" --> 1234
-# "605"  --> 605
-# "1405" --> 1405
-# "-7" --> -7
+# We need a function that can transform a number (integer) into a string.
+# What ways of achieving this do you know?
+# Examples (input --> output):
+# 123  --> "123"
+# 999  --> "999"
+# -100 --> "-100"
 def number_to_string(num):
     return str(num)
 
-
 if __name__ == "__main__":
-    print(number_to_string("1234"))  # 1234
-    print(number_to_string("605"))  # 605
-    print(number_to_string("1405"))  # 1405
+    print(number_to_string(1), type(number_to_string(1)))  # -1 <class 'str'>
+    print(number_to_string(14), type(number_to_string(14)))  # -14 <class 'str'>
+    print(number_to_string(-34), type(number_to_string(-34)))  # 34 <class 'str'>
