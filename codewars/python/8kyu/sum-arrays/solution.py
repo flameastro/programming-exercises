@@ -13,7 +13,7 @@
 # Advanced users may find this extremely easy and can easily write this in one line.
 # Solution 1
 def sum_array(a):
-    return sum
+    return sum(a)
 
 
 # Solution 2
