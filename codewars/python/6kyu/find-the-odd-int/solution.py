@@ -7,11 +7,16 @@
 # [0,1,0,1,0] should return 0, because it occurs 3 times (which is odd).
 # [1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).
 
+# Solution 1
 def find_it(seq):
     for x in seq:
         if seq.count(x) % 2 == 1:
             return x
 
+
+# Solution 2
+def find_it(seq):
+    return [x for x in seq if seq.count(x) % 2 == 1][0]
 
 
 if __name__ == "__main__":
