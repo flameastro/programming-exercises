@@ -20,6 +20,10 @@ def to_alternating_case(string):
     return ns
 
 
+def to_alternating_case(string):
+    return "".join([l.upper() if l.islower() else l.lower() for l in string])
+
+
 if __name__ == "__main__":
     print(to_alternating_case("hello world"))  # HELLO WORLD
     print(to_alternating_case("1a2b3c4d5e"))  # 1A2B3C4D5E
