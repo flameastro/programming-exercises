@@ -8,6 +8,7 @@
 # "1a2b3c4d5e".toAlternatingCase()  === "1A2B3C4D5E"
 # "String.prototype.toAlternatingCase".toAlternatingCase() === "sTRING.PROTOTYPE.TOaLTERNATINGcASE"
 # As usual, your function/method should be pure, i.e. it should not mutate the original string.
+# Solution 1
 def to_alternating_case(string):
     ns = ""
 
@@ -18,6 +19,11 @@ def to_alternating_case(string):
             ns += l.lower()
 
     return ns
+
+
+# Solution 2
+def to_alternating_case(string):
+    return "".join([l.upper() if l.islower() else l.lower() for l in string])
 
 
 if __name__ == "__main__":
