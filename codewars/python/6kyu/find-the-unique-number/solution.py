@@ -13,6 +13,6 @@ def find_uniq(arr):
 
 
 if __name__ == "__main__":
-    print(find_uniq([ 1, 1, 1, 2, 1, 1 ]))  # 
-    print(find_uniq([ 0, 0, 0.55, 0, 0 ]))  # 
-    print(find_uniq([ 3, 10, 3, 3, 3 ]))  # 
+    print(find_uniq([ 1, 1, 1, 2, 1, 1 ]))  # 2
+    print(find_uniq([ 0, 0, 0.55, 0, 0 ]))  # 0.55
+    print(find_uniq([ 3, 10, 3, 3, 3 ]))  # 10
