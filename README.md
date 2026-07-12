@@ -8,7 +8,7 @@ A public repository where I share my programming exercises from <img src="https:
 
 ## How this repository is organized
 
-This repository is structured by platform, programming language, and problem.
+This repository is structured by **platform**, **programming language**, and **problem**.
 
 ### 📁 General structure
 
@@ -21,11 +21,11 @@ platform/
 
 #### 📂 `platform/`
 
-Represents the source of the problem (e.g., CodeWars, LeetCode, BeeCrowd).
+Represents the source of the problem (e.g., **CodeWars**, **LeetCode**, **BeeCrowd**).
 
 #### 🧩 `language/`
 
-Indicates the programming language used to solve the problem (e.g., python, javascript, go).
+Indicates the programming language used to solve the problem (e.g., **python**, **javascript**, **go**).
 
 #### 🏷️ `problem_identifier/`
 
