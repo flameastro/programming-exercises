@@ -1,1 +1,6 @@
+# tools folder
 tools
+
+# binary
+*.out
+*.exe
